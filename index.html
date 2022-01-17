@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- first image curasol -->
+        <div class="topImageCurasol">
+            <div class="imageSecsion">
+                <div class="wrapper overlay">
+                    <h2>Торговые платформы</h2>
+                    <p>У каждого клиента ИнстаФорекс есть выбор среди торговых платформ. Он может выбрать именно ту,
+                        которая
+                        лучше всего соответствует его требованиям и предпочтениям в работе на финансовых площадках.
+                        Поэтому
+                        компания предоставляет несколько видов самых распространенных терминалов для мобильных и
+                        компьютерных устройств.</p>
+                </div>
+            </div>
+            <div class="buttonSection">
+                <div class="topswiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="leftSide">
+                                <button class="buttons btn-green">Открыть торговый счет</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rightSide btn-gray">
+                                <button class="buttons">Открыть торговый счет</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="rightSide btn-gray">
+                                <button class="buttons">Открыть торговый счет</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </div>
+        </div>
+        <!-- first image curasol -->
+
+        <!--main showcase-->
+        <div class="mainShowCase">
+            <div class="topSide">
+                <div class="leftCurasol">
+                    <div class="mainImage">
+                        <img src="images/mainImage.png" alt="">
+                    </div>
+                    <div class="smallText">Открыть галерею скриншотов МТ4</div>
+                    <div class="curasole images swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/curasoleImg1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- <img src="./images/curasoleImg1.png" alt=""> -->
+                                <img src="./images/curasoleImg2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/curasoleImg3.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- <img src="./images/curasoleImg1.png" alt=""> -->
+                                <img src="./images/curasoleImg4.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <!-- <img src="./images/curasoleImg1.png" alt=""> -->
+                                <img src="./images/curasoleImg4.png" alt="">
+                            </div>
+                        </div>
+                        <!-- <img src="./images/curasoleImg3.png" alt=""> -->
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="rightTexts">
+                    <div class="first">
+                        <img src="./images/four.png" alt=""> MetaTrader 4 для Windows
+                    </div>
+                    <div class="second">
+                        <ul>
+                            <li><img src="./images/greenokey.png" alt=""> 9 таймфреймов </li>
+                            <li><img src="./images/greenokey.png" alt=""> Широкий выбор инструментов для технического
+                                анализа
+                            </li>
+                            <li><img src="./images/greenokey.png" alt=""> Новостная лента в реальном времени
+                            </li>
+                            <li><img src="./images/greenokey.png" alt=""> Возможность автоматической торговли
+                            </li>
+                            <li><img src="./images/greenokey.png" alt=""> Большое количество бесплатных индикаторов и
+                                советников
+                            </li>
+                            <li><img src="./images/greenokey.png" alt=""> Надежное 128-битное шифрование
+                            </li>
+                            <li><img src="./images/greenokey.png" alt=""> Торговля в один клик
+                            </li>
+                            <li><img src="./images/greenokey.png" alt=""> Трейлинг-стоп
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="third">
+                        <button><img src="./images/windows.png" alt="">Скачать МТ4 терминал</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomSideCurasol">
+
+            </div>
+
+        </div>
+        <!--main showcase-->
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <script type="module">
+
+        // middle swiper....
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 30,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                }
+            },
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+
+
+        // top swiper....
+        const topSwiper = new Swiper('.topswiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 2,
+            // spaceBetween: 10,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                // 320: {
+                //     slidesPerView: 2,
+                //     spaceBetween: 20
+                // },
+                // // when window width is >= 480px
+                // 480: {
+                //     slidesPerView: 3,
+                //     spaceBetween: 30
+                // },
+                // // when window width is >= 640px
+                // 640: {
+                //     slidesPerView: 4,
+                //     spaceBetween: 40
+                // }
+            },
+            // And if we need scrollbar
+            // scrollbar: {
+            //     el: '.swiper-scrollbar',
+            // },
+        });
+    </script>
+</body>
+
+</html>
