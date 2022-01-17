@@ -38,11 +38,6 @@
                                 <button class="buttons">Открыть торговый счет</button>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="rightSide btn-gray">
-                                <button class="buttons">Открыть торговый счет</button>
-                            </div>
-                        </div>
                     </div>
 
                     <!-- If we need navigation buttons -->
@@ -119,12 +114,90 @@
                     </div>
                 </div>
             </div>
+            <div class="line"></div>
             <div class="bottomSideCurasol">
+                <!-- Slider main container -->
+                <div class="swiperBottom">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="singleCard">
+                                <img src="./images/image 21 (1).png" alt="">
+                                <div class="p">
+                                    Простой и интуитивно понятный интерфейс
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="singleCard">
+                                <img src="./images/flag.png" alt="">
+                                <div class="p">
+                                    Работает со всеми видами торговых стратегий
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="singleCard">
+                                <img src="./images/message.png" alt="">
+                                <div class="p">
+                                    Не требуется использования большого количества ресурсов вашим устройством
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="singleCard">
+                                <img src="./images/world.png" alt="">
+                                <div class="p">
+                                    Доступны разные режимы исполнения ордеров
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <!-- <div class="swiper-pagination"></div> -->
 
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
 
         </div>
         <!--main showcase-->
+
+        <!-- small card section -->
+        <div class="smallCardSection">
+            <div class="leftSide">
+                <img src="./images/mobileAndTab.png" alt="" srcset="">
+            </div>
+            <div class="rightSide">
+                <div class="one">
+                    <img src="./images/mticon.png" alt="">
+                    <div class="text">Мобильная версия MetaTrader 4</div>
+                </div>
+                <div class="two">
+                    Платформа MT4 также доступна и на мобильных устройствах, что позволяет работать на финансовых
+                    площадках, не привязываясь к одному месту. Кроме того, мобильная версия обладает всем необходимым
+                    функционалом для удобного использования.
+                </div>
+                <div class="three">
+                    <div class="linkOne">
+                        <img src="./images/qr.png" alt="" srcset="">
+                    </div>
+                    <div class="linkTwo">
+                        <img src="./images/fullApple.png" alt="" srcset="">
+                    </div>
+                    <div class="linkThree">
+                        <img src="./images/fullGoogle.png" alt="" srcset="">
+                    </div>
+                    <div class="linkFour">
+                        <img src="./images/unknownAll.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- small card section -->
     </div>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
@@ -138,8 +211,8 @@
             direction: 'horizontal',
             loop: true,
             slidesPerView: 4,
-            spaceBetween: 30,
-
+            centeredSlides: true,
+            spaceBetween: 0,
             // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -147,20 +220,20 @@
             },
             breakpoints: {
                 // when window width is >= 320px
-                320: {
-                    slidesPerView: 2,
-                    spaceBetween: 20
-                },
-                // when window width is >= 480px
-                480: {
-                    slidesPerView: 3,
-                    spaceBetween: 30
-                },
-                // when window width is >= 640px
-                640: {
-                    slidesPerView: 4,
-                    spaceBetween: 40
-                }
+                // 320: {
+                //     slidesPerView: 2,
+                //     spaceBetween: 20
+                // },
+                // // when window width is >= 480px
+                // 480: {
+                //     slidesPerView: 3,
+                //     spaceBetween: 30
+                // },
+                // // when window width is >= 640px
+                // 640: {
+                //     slidesPerView: 4,
+                //     spaceBetween: 10
+                // }
             },
             // And if we need scrollbar
             scrollbar: {
@@ -172,11 +245,28 @@
         // top swiper....
         const topSwiper = new Swiper('.topswiper', {
             // Optional parameters
-            direction: 'horizontal',
             loop: true,
             slidesPerView: 2,
-            // spaceBetween: 10,
+            // centeredSlides: true,
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                // delay: 100,
+            }
+        });
 
+
+        // bottom swiper 
+        const bottomSwiper = new Swiper('.swiperBottom', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 0,
+            centeredSlides: true,
             // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -207,6 +297,9 @@
             //     el: '.swiper-scrollbar',
             // },
         });
+
+
+
     </script>
 </body>
 

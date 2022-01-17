@@ -116,6 +116,15 @@
     border-radius: 10px;
 }
 
+.mainShowCase .line {
+    width: 90%;
+    /* border-top: 2px solid; */
+    border-top: rgba(232, 232, 232, 1);
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 .mainShowCase .topSide {
     display: flex;
     flex-direction: row;
@@ -233,4 +242,125 @@
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+}
+
+
+
+/* swiper bottom */
+.swiperBottom {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.swiperBottom .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.topswiper .swiper-slide {
+    margin-right: -0.2rem;
+}
+
+.swiper .swiper-slide {
+    margin-right: .1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.swiperBottom .swiper-slide {
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: center;
+    margin-left: .3rem;
+}
+
+
+.bottomSideCurasol .singleCard {
+    /* border: 1px solid; */
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-right: unset;
+    margin-left: unset;
+    max-width: 170px;
+}
+
+.bottomSideCurasol .singleCard img {
+    margin-bottom: 1.5rem;
+}
+
+.bottomSideCurasol .singleCard .p {
+    text-align: center;
+}
+
+
+
+/* small card section */
+.smallCardSection {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url('./images/smallCardBg.png');
+    background-position: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 5rem;
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 15%);
+    border-radius: 10px;
+}
+
+.smallCardSection .leftSide {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.smallCardSection .rightSide {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 1.5rem; */
+    justify-content: center;
+}
+
+.smallCardSection .rightSide .one {
+    display: flex;
+    align-items: center;
+}
+
+.smallCardSection .rightSide .one img {
+    margin-right: .5rem;
+}
+
+.smallCardSection .rightSide .two {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.smallCardSection .rightSide .three {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-family: swiper-icons;
+    text-transform: none !important;
+    letter-spacing: 0;
+    text-transform: none;
+    font-variant: initial;
+    line-height: 1;
+    font-size: 2rem;
+    font-weight: bold;
+    color: gray;
 }
